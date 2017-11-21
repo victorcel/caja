@@ -12,12 +12,12 @@ class Cliente extends Model
         'apellidos'
     ];
 
-    public function tarjeta()
+    public function tarjetas()
     {
         return $this->hasMany(Tarjeta::class);
     }
 
-    public function transaccion()
+    public function transacciones()
     {
         return $this->hasMany(Transaccion::class);
     }
